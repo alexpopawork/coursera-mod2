@@ -24,7 +24,7 @@
 					Buy {{product.quantity}} of {{product.name}} 
 				</div>
 				<div class="col-xs-4">
-					<button ng-click="toBuy.alreadyBought($index)" class="btn">AlreadyBought</button>
+					<button ng-click="toBuy.alreadyBought($index)" class="btn">Already Bought <span class="glyphicon glyphicon-ok"></span></button>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -33,7 +33,7 @@
 			<header><h3>Bought Items</h3></header>
 			<h3 ng-if="!alreadyBought.products[0]" class="redMessage">Nothing bought yet!</h3>
 			<div ng-repeat="product in alreadyBought.products">
-				Bought {{product.quantity}} of {{product.name}}
+				<span class="glyphicon glyphicon-ok"></span> Bought {{product.quantity}} of {{product.name}}
 			</div>
 		</div>
 	</div>
